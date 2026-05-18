@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: 'Crimson Pro', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+}
+
+/* Subtle selection color */
+::selection {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Focus states */
+input:focus {
+  outline: none;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
